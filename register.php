@@ -7,7 +7,8 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST'){
     $phone = htmlspecialchars($_POST['phone']);
     $password = htmlspecialchars($_POST['password']);
 
-    $sql = "INSERT INTO `profile-details`( username, email, phone, password) VALUES( '$username', '$email', '$phone', '$password')";
+    $sql = "INSERT INTO profile_details (username, email, phone, password)
+        VALUES ('$username', '$email', '$phone', '$password')";
 
     if ($conn->query($sql) === TRUE) {
         // Success: show alert and redirect back to form
