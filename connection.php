@@ -1,8 +1,8 @@
 <?php
-$host = "localhost";
-$user = "root";
-$password = "";
-$dbname = "todo_app";
+$host = "sql105.infinityfree.com";
+$user = "if0_40002351";
+$password = "Nemezu2005";
+$dbname = "if0_40002351_task_trail";
 
 $conn = new mysqli($host, $user, $password, $dbname);
 
